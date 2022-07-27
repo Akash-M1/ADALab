@@ -15,34 +15,29 @@ void swap(int arr[],int i,int j){
 int partition(int A[], int l, int r) 
 { 
     int x = A[r];
-    int i = l-1;
-    for (int j = l ; j <=r-1 ; j++) 
+    int i = l;
+    for (int j = l ; j <=r ; j++) 
     { 
-        if (A[j] <= x) 
+        if (A[j] <  x) 
         { 
-            i = i + 1;
             swap(A,i,j);
+            i = i + 1;
         } 
     } 
-    swap(A,i+1,r);
-    return i+1;
+    swap(A,i,r);
+    return i;
 }
 
 int kthMin(int arr[],int si,int ei,int k){
-	if(si==ei){
-		return arr[si];
-	}
-
 	int i=partition(arr,si,ei);
-	int count=i-si+1;
 
-	if(count==k){
-		return arr[count];
+	if(i==k-1){
+		return arr[i];
 	}
-	else if(count > k)
-		return kthMin(arr,si,i-1,k);
-	else
+	else if(i < k-1)
 		return kthMin(arr,i+1,ei,k);
+	else
+		return kthMin(arr,si,i-1,k);
 }
 
 
@@ -59,5 +54,5 @@ int main(){
 		printf("%d ",arr[i]);
 	}
 
-	printf("\n%d",kthMin(arr,0,n-1,2));
+	printf("\n%d",kthMin(arr,0,n-1,4));
 }
