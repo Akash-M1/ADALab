@@ -1,3 +1,5 @@
+//6. Write program to obtain the T opological ordering of vertices in a given digraph.
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

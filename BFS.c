@@ -1,3 +1,6 @@
+//4.Write program to do the following: 
+	//.Print all the nodes reachable from a given starting node in a digraph using BFS method.
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

@@ -1,3 +1,5 @@
+//4.Write program to do the following:
+	//b. Check whether a given graph is connectedor not using DFS method.
 #include<stdio.h>
 #include<stdlib.h>
 

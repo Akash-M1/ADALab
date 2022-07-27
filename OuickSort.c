@@ -1,3 +1,5 @@
+//9. Sort a given set of N integer elements using Quick Sort technique and compute its time taken
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

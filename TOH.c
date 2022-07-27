@@ -1,3 +1,6 @@
+//1.Write a recursive program to
+	//a. Solve Towers-of-Hanoi problem
+
 #include<stdio.h>
 
 void toh(int n,char s,char d,char a){

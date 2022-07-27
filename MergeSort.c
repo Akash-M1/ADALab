@@ -1,3 +1,5 @@
+//8. Sort a given set of N integer elements using Merge Sort technique and compute its time taken. Run the program for different values of N and record the time taken to sort.
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>

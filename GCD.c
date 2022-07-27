@@ -1,3 +1,5 @@
+//1.Write a recursive program to
+	//b. T o find GCD
 #include<stdio.h>
 
 int gcd(int n, int m){
