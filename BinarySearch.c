@@ -61,11 +61,4 @@ int main(){
 	clock_t end=clock();
 
 	printf("Time taken by Binary Search is %f",(double)(end-start)/CLOCKS_PER_SEC);
-
-	// for (int i = 0; i < n; ++i)
-	// {
-	// 	printf("%d ",arr[i]);
-	// }
-	// int j=binarySearch(arr,109,0,n-1);
-	// printf("%d\n",j);
 }
