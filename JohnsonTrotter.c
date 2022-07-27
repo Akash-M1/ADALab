@@ -1,4 +1,4 @@
-//7. Implement Johnson Trotteralgorithm to generate permutations
+//7. Implement Johnson Trotter algorithm to generate permutations
 
 #include<stdio.h>
 #include<stdlib.h>

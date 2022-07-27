@@ -1,4 +1,4 @@
-//6. Write program to obtain the T opological ordering of vertices in a given digraph.
+//6. Write program to obtain the Topological ordering of vertices in a given digraph.
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -7,7 +7,6 @@
 
 int q[30];
 int f=-1,r=-1;
-
 
 bool isEmpty(){
 	if(f==-1 && r==-1){
@@ -40,7 +39,6 @@ int deQueue(){
 
 }
 
-
 void topoLogicalSorting(int arr[10][10],int n){
 	int sorted[10];
 	int k=0;
@@ -49,21 +47,18 @@ void topoLogicalSorting(int arr[10][10],int n){
 	{
 		indegrees[i]=0;
 	}
-
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			if(arr[i][j]==1)
 				indegrees[j]++;
 		}
 	}
-
 	for (int i = 0; i < n; ++i)
 	{
 		if(indegrees[i]==0){
 			enQueue(i);
 		}
 	}
-
 	int visitedNodes=0;
 	while(!isEmpty()){
 		int snode=deQueue();

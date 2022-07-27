@@ -11,7 +11,6 @@ void delay(){
 	}
 }
 
-
 int binarySearch(int arr[], int k, int si, int ei){
 	if(si>ei){
 		return -1;
@@ -47,8 +46,6 @@ void bubbleSort(int arr[], int n){
 		}
 	}
 }
-
-
 
 int main(){
 	int arr[5000],n;
