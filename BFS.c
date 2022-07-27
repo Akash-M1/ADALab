@@ -37,7 +37,7 @@ int deQueue(){
 
 }
 
-void bfs(int arr[10][10], int start, int visited[], int n){
+void bfs(int arr[10][10], int start, int visited[], int n, int *flag){
 	visited[start]=1;
 	enQueue(start);
 
@@ -48,6 +48,7 @@ void bfs(int arr[10][10], int start, int visited[], int n){
 			if(arr[pending][i]==1 && visited[i]==0){
 				enQueue(i);
 				visited[i]=1;
+				*flag=1;
 			}
 		}
 	}
@@ -80,8 +81,13 @@ int main(){
 		visited[i]=0;
 	}
 	int start;
+	int flag=0;
 	printf("Enter the starting vertex :");
 	scanf("%d",&start);
 
-	bfs(arr,start,visited,n);
+	bfs(arr,start,visited,n,&flag);
+
+	if(flag==0){
+		printf("\nNo Path Found\n");
+	}
 }
