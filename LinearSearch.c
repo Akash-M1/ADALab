@@ -34,12 +34,4 @@ int main(){
 	clock_t end=clock();
 
 	printf("Time taken by Linear Search is %f",(double)(end-start)/CLOCKS_PER_SEC);
-	// for (int i = 0; i < n; ++i)
-	// {
-	// 	printf("%d ",arr[i]);
-	// }
-
-	// int j=linearSearch(arr,926,0,99);
-	// printf("%d\n",j);
-	
 }
