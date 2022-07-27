@@ -42,12 +42,6 @@ int main(){
 	for(int i=0;i<n;i++){
 		arr[i]=(rand() % (1 - 5000 + 1)) + 1;
 	}
-
-	// selectionSort(arr,n);
-	// for (int i = 0; i < n; ++i)
-	// {
-	// 	printf("%d ",arr[i]);
-	// }
 	clock_t start=clock();
 	selectionSort(arr,n);
 	clock_t end=clock();
